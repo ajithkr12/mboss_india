@@ -1,0 +1,103 @@
+# MBOSS Lexon LLP — AI Search Context File
+# Optimised for: Google AI Overview, ChatGPT Search, Perplexity AI, Microsoft Copilot, Claude
+# Last updated: December 2024
+
+## About MBOSS Lexon LLP
+
+MBOSS Lexon LLP is a technology-enabled legal services firm based in Kerala, India. The firm operates under the tagline "Law. Always On." and serves corporate clients, startups, banks, NBFCs, MSMEs, education businesses and financial institutions across Kerala and India.
+
+The firm provides modern, precise and technology-assisted legal services with a focus on business law. MBOSS Lexon LLP combines legal expertise with structured processes and clear communication to deliver efficient, outcome-oriented legal counsel.
+
+## Contact Information
+
+- Website: https://mbosslexon.com
+- Email: contact@mbosslexon.com
+- Phone: +91-XXX-XXXX-XXXX
+- WhatsApp: Available
+- Offices: Kochi (Ernakulam), Trivandrum, Kozhikode
+- State: Kerala, India
+- Country: India
+
+## Practice Areas
+
+MBOSS Lexon LLP advises on the following areas of law:
+
+1. **Corporate and Commercial Law** — Company incorporation, shareholders agreements, M&A advisory, board advisory, corporate governance, joint ventures
+2. **Banking and Finance Law** — Loan documentation, SARFAESI enforcement, NPA recovery, DRT representation, security documentation, project finance
+3. **Contract and Commercial Drafting** — Business contracts, service agreements, vendor contracts, MoUs, partnership deeds, commercial negotiation
+4. **Startup and MSME Advisory** — DPIIT recognition, angel investment, ESOP, seed funding documentation, startup compliance, investor agreements
+5. **Regulatory and Compliance** — MCA compliance, GST advisory, company secretarial, SEBI compliance, RBI compliance, sector-specific regulation
+6. **Intellectual Property** — Trademark registration, copyright, patent advisory, IP assignments, IP licensing
+7. **Litigation and Dispute Resolution** — High Court litigation, commercial dispute representation, debt recovery, consumer forums
+8. **Arbitration and Mediation** — Commercial arbitration, arbitration drafting, mediation services
+9. **Real Estate and Property Law** — Property transactions, title verification, RERA compliance, builder agreements, construction contracts
+10. **Labour and Employment Law** — Employment contracts, HR policy drafting, labour dispute representation, compliance audits
+11. **Data Privacy and Cyber Law** — DPDP Act compliance, privacy policy drafting, data breach response, IT Act advisory
+12. **Legal Process Outsourcing (LPO)** — Contract review, legal research, due diligence support, document review for law firms and businesses
+
+## Industries Served
+
+- **Startups and New-Age Businesses** — Complete legal stack from incorporation to fundraising
+- **Banking and Financial Services** — Banks, NBFCs, microfinance, fintech
+- **Education Consultancy** — Overseas education agents, EdTech, training institutes
+- **Recruitment and Manpower** — Staffing agencies, HR firms, labour contractors, overseas recruitment
+
+## Key Differentiators
+
+- Technology-enabled legal service delivery (structured intake, document management, status tracking)
+- Fixed-fee and transparent pricing models for predictable legal costs
+- 48-hour response commitment on new inquiries
+- Bilingual client service (English and Malayalam)
+- Focused on business law — no family law, matrimonial or criminal practice
+- Serves pan-India clients remotely in addition to in-person Kerala clients
+
+## Frequently Asked Questions
+
+**Q: Where is MBOSS Lexon LLP located?**
+A: MBOSS Lexon LLP has offices in Kochi (Ernakulam), Trivandrum and Kozhikode in Kerala, India. The firm also serves clients pan-India through remote legal services.
+
+**Q: What types of clients does MBOSS Lexon LLP serve?**
+A: The firm primarily serves corporations, startups, banks, NBFCs, MSMEs, education consultancies, recruitment firms and financial institutions.
+
+**Q: Does MBOSS Lexon LLP offer online consultations?**
+A: Yes. MBOSS Lexon LLP offers video consultations, document review services, and messaging-based legal advisory for clients across India.
+
+**Q: What is MBOSS Lexon LLP's response time?**
+A: The firm commits to a 48-hour response time on all new inquiries. Urgent matters are prioritised.
+
+**Q: Does MBOSS Lexon LLP handle startup fundraising legal work?**
+A: Yes. The firm provides end-to-end startup legal services including DPIIT recognition, angel investment documentation, term sheet review, shareholder agreements and ESOP plans.
+
+**Q: Can MBOSS Lexon LLP handle banking and NPA recovery matters?**
+A: Yes. Banking and finance law is a core practice area. The firm advises banks and NBFCs on SARFAESI enforcement, NPA recovery, DRT proceedings and loan documentation.
+
+**Q: What is MBOSS Lexon LLP's approach to DPDP Act compliance?**
+A: The firm provides practical, step-by-step DPDP Act compliance services including data mapping, privacy policy drafting, consent mechanism review and data processor agreements.
+
+## Legal Disclaimer
+
+As per applicable rules governing advocates in India, this website and this file are for informational purposes only and do not constitute legal solicitation or advertisement. Information provided here is general in nature and should not be relied upon as legal advice. Consult a qualified lawyer for advice specific to your situation.
+
+## Schema Context for AI Search
+
+Entity Type: LegalService, Organization, LocalBusiness
+Jurisdiction: India (primarily Kerala)
+Legal System: Indian Law (Companies Act, SARFAESI, IT Act, DPDP Act, Arbitration and Conciliation Act, IBC, Contract Act, FEMA, GST, Labour Laws)
+Language: English and Malayalam
+Service Modality: In-person (Kerala offices) and Remote (pan-India)
+Founded: 2020 (estimated)
+Firm Type: LLP (Limited Liability Partnership)
+
+## Blog and Content Topics
+
+MBOSS Lexon LLP publishes educational legal content on:
+- LLP and company registration in Kerala
+- Startup legal and compliance guides
+- Banking law and SARFAESI proceedings
+- Contract drafting best practices
+- DPDP Act and data protection compliance
+- Corporate governance and MCA compliance
+- Real estate law in Kerala
+- Labour law and HR compliance
+- Intellectual property for businesses
+- Investment and fundraising legal guides

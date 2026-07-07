@@ -2,6 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       MBOSS Lexon LLP — Premium Legal Services Kerala | Law. Always On.
@@ -27,7 +45,7 @@
     />
     <meta
       property="og:image"
-      content="https://mbosslexon.com/assets/og-image.jpg"
+      content="https://mbosslexon.com/assets/og-image.webp"
     />
     <meta property="og:site_name" content="MBOSS Lexon LLP" />
 
@@ -65,7 +83,7 @@
         "name": "MBOSS Lexon LLP",
         "legalName": "MBOSS Lexon LLP",
         "url": "https://mbosslexon.com",
-        "logo": "https://mbosslexon.com/assets/logo.png",
+        "logo": "https://mbosslexon.com/assets/logo.webp",
         "description": "Technology-enabled legal services firm delivering corporate law, banking & finance, startup advisory, compliance and business legal solutions across Kerala and India.",
         "foundingDate": "2024",
         "address": {
@@ -75,9 +93,13 @@
           "addressLocality": "Kochi"
         },
         "areaServed": ["Kerala", "India"],
-        "telephone": "+91-XXXXXXXXXX",
+        "telephone": "+91 8129497999",
         "email": "info@mbosslexon.com",
-        "sameAs": ["https://linkedin.com/company/mboss-lexon-llp"],
+        "sameAs": [
+          "https://www.linkedin.com/company/mboss-lexon-llp",
+          "https://www.instagram.com/mbosslexon/",
+          "https://www.facebook.com/people/Mboss-Lexon-LLP/61591241827208/"
+        ],
         "serviceType": [
           "Corporate Law",
           "Banking & Finance Law",
@@ -194,11 +216,19 @@
         display: block;
       }
 
-      /* ── Skip button ── */
-      #intro-skip-btn {
+      /* ── Video controls (mute + skip) ── */
+      #intro-controls {
         position: absolute;
         bottom: 2rem;
         right: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        z-index: 10000;
+      }
+
+      /* ── Skip button ── */
+      #intro-skip-btn {
         padding: 0.65rem 1.6rem;
         background: #01cdce;
         color: #000;
@@ -213,7 +243,6 @@
           background 0.2s,
           box-shadow 0.2s,
           transform 0.15s;
-        z-index: 10000;
       }
       #intro-skip-btn:hover {
         background: #00a8a9;
@@ -223,6 +252,31 @@
       #intro-skip-btn:active {
         transform: translateY(0);
         box-shadow: 0 2px 10px rgba(1, 205, 206, 0.4);
+      }
+
+      /* ── Mute/unmute button ── */
+      #intro-mute-btn {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.55);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+      }
+      #intro-mute-btn:hover {
+        background: rgba(1, 205, 206, 0.85);
+        border-color: #01cdce;
+      }
+      #intro-mute-btn:active {
+        transform: translateY(0) scale(0.95);
       }
 
       /* ── Ripple flash wipe ── */
@@ -282,13 +336,22 @@
     <div id="intro-video-overlay" style="display: none">
       <video id="intro-video" playsinline>
         <source
-          src="assets/indroduse_desktop.mp4"
+          src="assets/indroduse_desktop.webm"
           media="(min-width: 768px)"
-          type="video/mp4"
+          type="video/webm"
         />
-        <source src="assets/indroduse_mobile.mp4" type="video/mp4" />
+        <source src="assets/indroduse_mobile.webm" type="video/webm" />
       </video>
-      <button id="intro-skip-btn">Skip to Main Page &rsaquo;</button>
+      <div id="intro-controls">
+        <button
+          id="intro-mute-btn"
+          aria-label="Mute video"
+          aria-pressed="false"
+        >
+          <i class="fas fa-volume-up"></i>
+        </button>
+        <button id="intro-skip-btn">Skip to Main Page &rsaquo;</button>
+      </div>
     </div>
 
     <!-- Skip Navigation -->
@@ -300,7 +363,15 @@
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="container">
         <a href="index.html" class="logo" aria-label="MBOSS Lexon LLP — Home">
-          <img src="assets/logo.png" alt="MBOSS Lexon LLP" />
+          <img
+            src="assets/logo-full.webp"
+            alt="MBOSS Lexon LLP"
+            class="logo-full"
+          /><img
+            src="assets/logo.webp"
+            alt="MBOSS Lexon LLP"
+            class="logo-icon"
+          />
         </a>
 
         <nav class="nav-links" aria-label="Primary">
@@ -413,9 +484,7 @@
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
 
-        <a href="contact.html" class="btn btn-primary btn-sm navbar-cta"
-          >Book Consultation</a
-        >
+        <div class="navbar-cta-group"><a href="https://www.mbossglobal.com" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">MBOSS Global</a><a href="contact.html" class="btn btn-primary btn-sm navbar-cta">Book Consultation</a></div>
 
         <button
           class="nav-toggle"
@@ -490,11 +559,7 @@
       <a href="blog.html" class="mobile-nav-link">Blog</a>
       <a href="contact.html" class="mobile-nav-link">Contact</a>
 
-      <div style="margin-top: 2rem">
-        <a href="contact.html" class="btn btn-primary w-100"
-          >Book Consultation</a
-        >
-      </div>
+      <div style="margin-top:2rem;display:flex;flex-direction:column;gap:0.75rem;"><a href="https://www.mbossglobal.com" target="_blank" rel="noopener" class="btn btn-outline-primary w-100">MBOSS Global</a><a href="contact.html" class="btn btn-primary w-100">Book Consultation</a></div>
     </div>
 
     <!-- ============================================================
@@ -688,9 +753,12 @@
                     <i class="fas fa-map-marker-alt"></i>
                   </div>
                   <div>
-                    <strong>Offices Across Kerala</strong>
+                    <strong
+                      >Offices Across Kerala, Connected to All Court
+                      Centers</strong
+                    >
                     <span
-                      >Kochi, Trivandrum &amp; Kozhikode — with pan-India remote
+                      >Kayamkulam &amp; Kochi — with pan-India remote
                       advisory.</span
                     >
                   </div>
@@ -720,7 +788,7 @@
               <!-- Main image card -->
               <div class="about-img-card">
                 <img
-                  src="assets/lady_justice.jpg"
+                  src="assets/lady_justice.webp"
                   alt="Lady Justice — MBOSS Lexon LLP"
                   loading="lazy"
                 />
@@ -1434,7 +1502,7 @@
             <a href="contact.html" class="btn btn-primary btn-lg">
               <i class="fas fa-calendar-check"></i> Schedule Consultation
             </a>
-            <a href="tel:+91XXXXXXXXXX" class="btn btn-outline btn-lg">
+            <a href="tel:+918129497999" class="btn btn-outline btn-lg">
               <i class="fas fa-phone-alt"></i> Call Us Now
             </a>
           </div>
@@ -1455,7 +1523,7 @@
               class="logo"
               style="margin-bottom: 1.25rem; display: inline-flex"
             >
-              <img src="assets/logo.png" alt="MBOSS Lexon LLP" />
+              <img src="assets/logo.webp" alt="MBOSS Lexon LLP" />
             </a>
             <p class="footer-brand-desc">
               Technology-enabled legal services firm delivering precise,
@@ -1474,8 +1542,7 @@
                 />
                 <circle cx="12" cy="11" r="3" />
               </svg>
-              Kerala, India &nbsp;&middot;&nbsp; Kochi &nbsp;&middot;&nbsp;
-              Trivandrum &nbsp;&middot;&nbsp; Kozhikode
+              Kayamkulam &nbsp;&middot;&nbsp; Kochi
             </div>
             <div class="footer-contact-row">
               <svg
@@ -1501,20 +1568,25 @@
                   d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
                 />
               </svg>
-              +91-XXXXXXXXXX
+              +91 8129497999
             </div>
             <div class="footer-social" style="margin-top: 1.5rem">
-              <a href="#" aria-label="LinkedIn" title="LinkedIn"
+              <a href="https://www.linkedin.com/company/mboss-lexon-llp" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
-              <a href="#" aria-label="Instagram" title="Instagram"
+              <a
+                href="https://www.instagram.com/mbosslexon/"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener"
+                title="Instagram"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="#" aria-label="Twitter / X" title="Twitter / X"
-                ><i class="fab fa-x-twitter"></i
+              <a href="https://www.facebook.com/people/Mboss-Lexon-LLP/61591241827208/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"
+                ><i class="fab fa-facebook-f"></i
               ></a>
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/918129497999"
                 aria-label="WhatsApp"
                 title="WhatsApp"
                 target="_blank"
@@ -1564,7 +1636,8 @@
             <h5 class="footer-heading">Quick Links</h5>
             <div class="footer-links">
               <a href="about.html" class="footer-link">About the Firm</a>
-              <a href="team.html" class="footer-link">Our Team</a>
+              <a href="announcements.html" class="footer-link">Announcements &amp; News</a>
+              <a href="internships.html" class="footer-link">Internships</a>
               <a href="blog.html" class="footer-link">Blog &amp; Insights</a>
               <a href="contact.html" class="footer-link">Contact Us</a>
               <a href="industries/startups.html" class="footer-link"
@@ -1589,8 +1662,7 @@
         <div class="footer-bottom">
           <div class="footer-copyright">
             &copy; 2024 MBOSS Lexon LLP. All rights reserved. | Registered in
-            Kerala, India
-          </div>
+            Kerala, India | Designed &amp; Developed by <a href="https://www.tinqbit.com" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.55);">Tinqbit</a></div>
           <div class="footer-legal-links">
             <a href="privacy-policy.html">Privacy Policy</a>
             <a href="terms-of-use.html">Terms of Use</a>
@@ -1605,7 +1677,7 @@
       <i class="fas fa-chevron-up"></i>
     </button>
     <a
-      href="https://wa.me/91XXXXXXXXXX"
+      href="https://wa.me/918129497999"
       class="whatsapp-btn"
       target="_blank"
       rel="noopener"
@@ -1621,6 +1693,27 @@
         var videoOverlay = document.getElementById("intro-video-overlay");
         var video = document.getElementById("intro-video");
         var skipBtn = document.getElementById("intro-skip-btn");
+        var muteBtn = document.getElementById("intro-mute-btn");
+
+        function updateMuteBtn() {
+          var icon = muteBtn.querySelector("i");
+          if (video.muted) {
+            icon.className = "fas fa-volume-mute";
+            muteBtn.setAttribute("aria-label", "Unmute video");
+            muteBtn.setAttribute("aria-pressed", "true");
+          } else {
+            icon.className = "fas fa-volume-up";
+            muteBtn.setAttribute("aria-label", "Mute video");
+            muteBtn.setAttribute("aria-pressed", "false");
+          }
+        }
+
+        muteBtn.addEventListener("click", function () {
+          video.muted = !video.muted;
+          updateMuteBtn();
+        });
+
+        video.addEventListener("volumechange", updateMuteBtn);
 
         var ripple = document.getElementById("intro-ripple");
         var transitioning = false;
@@ -1669,8 +1762,8 @@
 
         function getVideoSrc() {
           return window.innerWidth >= 768
-            ? "assets/indroduse_desktop.mp4"
-            : "assets/indroduse_mobile.mp4";
+            ? "assets/indroduse_desktop.webm"
+            : "assets/indroduse_mobile.webm";
         }
 
         function showVideo() {

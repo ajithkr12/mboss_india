@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initInternshipFormHandler();
   setActiveNavLink();
   initMobileSubmenus();
-  initTeamBioToggles();
   initInternshipModal();
   // Skip on first visit — the video intro will replay it after transition
   if (sessionStorage.getItem("disclaimerAccepted")) initHeroTyping();
@@ -153,63 +152,6 @@ function initMobileSubmenus() {
       const open = sub.classList.toggle("open");
       if (icon) icon.textContent = open ? "−" : "+";
     });
-  });
-}
-
-/* Team member details modal */
-function initTeamBioToggles() {
-  const overlay = document.getElementById("team-modal-overlay");
-  if (!overlay) return;
-
-  const box = overlay.querySelector(".team-modal-box");
-  const closeBtn = overlay.querySelector(".team-modal-close");
-  const modalPhoto = document.getElementById("team-modal-photo");
-  const modalName = document.getElementById("team-modal-name");
-  const modalDesignation = document.getElementById("team-modal-designation");
-  const modalPractice = document.getElementById("team-modal-practice");
-  const modalBio = document.getElementById("team-modal-bio");
-  let lastFocused = null;
-
-  function openModal(card) {
-    const photo = card.querySelector(".team-card-photo img");
-    const name = card.querySelector("h3");
-    const designation = card.querySelector(".team-designation");
-    const practice = card.querySelector(".team-practice");
-    const bio = card.querySelector(".team-bio");
-
-    modalPhoto.src = photo ? photo.src : "";
-    modalPhoto.alt = photo ? photo.alt : "";
-    modalName.textContent = name ? name.textContent : "";
-    modalDesignation.textContent = designation ? designation.textContent : "";
-    modalPractice.textContent = practice ? practice.textContent : "";
-    modalPractice.style.display = practice ? "" : "none";
-    modalBio.innerHTML = bio ? bio.innerHTML : "";
-
-    lastFocused = document.activeElement;
-    overlay.classList.add("open");
-    document.body.style.overflow = "hidden";
-    closeBtn.focus();
-  }
-
-  function closeModal() {
-    overlay.classList.remove("open");
-    document.body.style.overflow = "";
-    if (lastFocused) lastFocused.focus();
-  }
-
-  document.querySelectorAll(".team-bio-toggle").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const card = btn.closest(".team-card");
-      if (card) openModal(card);
-    });
-  });
-
-  closeBtn.addEventListener("click", closeModal);
-  overlay.addEventListener("click", (e) => {
-    if (!box.contains(e.target)) closeModal();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && overlay.classList.contains("open")) closeModal();
   });
 }
 

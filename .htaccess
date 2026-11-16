@@ -1,3 +1,10 @@
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Clean URLs: /team/omar-salim -> team/omar-salim.html
+# DirectorySlash Off stops Apache redirecting /team to /team/ now that a
+# team/ folder sits next to team.html.
+DirectorySlash Off
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]

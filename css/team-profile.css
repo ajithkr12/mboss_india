@@ -1,0 +1,125 @@
+/* ============================================================
+   Team member profile pages (team/<name>.html)
+   ============================================================ */
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.profile-aside {
+  position: sticky;
+  top: calc(var(--navbar-height) + 1.5rem);
+}
+
+.profile-photo {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--gray-100);
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 5;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.profile-facts {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  display: grid;
+  gap: 1rem;
+}
+
+.profile-fact {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+.profile-fact i {
+  color: var(--primary-dark);
+  width: 1.25rem;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+.profile-fact-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-600);
+}
+
+.profile-fact-value {
+  font-weight: 600;
+  color: var(--gray-900);
+  font-size: 0.95rem;
+}
+
+.profile-name {
+  margin-bottom: 0.35rem;
+}
+
+.profile-designation {
+  color: var(--primary-dark);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.profile-bio p {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  color: var(--gray-700);
+  margin-bottom: 1.15rem;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.profile-tag {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: var(--primary-light);
+  color: var(--primary-deeper);
+  border: 1px solid rgba(1, 205, 206, 0.25);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.25rem;
+}
+
+/* "More Details" is now a link to the profile page */
+a.team-bio-toggle {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .profile-aside {
+    position: static;
+    max-width: 420px;
+  }
+}

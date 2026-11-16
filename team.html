@@ -42,6 +42,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/team-profile.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,12 +53,14 @@
             "@type": "Person",
             "name": "Adv. Mohammed Basheer",
             "jobTitle": "Founding Partner, CEO",
+            "url": "https://mbosslexon.com/team/mohammed-basheer",
             "worksFor": { "@type": "LegalService", "name": "MBOSS Lexon LLP" }
           },
           {
             "@type": "Person",
             "name": "Adv. Omar Salim",
             "jobTitle": "Founding Partner, CEO",
+            "url": "https://mbosslexon.com/team/omar-salim",
             "worksFor": { "@type": "LegalService", "name": "MBOSS Lexon LLP" }
           }
         ]
@@ -276,14 +279,14 @@
                     dedicated service.
                   </p>
                 </div>
-                <button
+                <a
                   class="team-bio-toggle"
-                  type="button"
-                  aria-haspopup="dialog"
+                  href="team/mohammed-basheer.html"
+                  aria-label="More details about Adv. Mohammed Basheer"
                 >
                   <span class="team-bio-toggle-label">More Details</span>
                   <i class="fas fa-arrow-right"></i>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -334,14 +337,14 @@
                     fraternity.
                   </p>
                 </div>
-                <button
+                <a
                   class="team-bio-toggle"
-                  type="button"
-                  aria-haspopup="dialog"
+                  href="team/omar-salim.html"
+                  aria-label="More details about Adv. Omar Salim"
                 >
                   <span class="team-bio-toggle-label">More Details</span>
                   <i class="fas fa-arrow-right"></i>
-                </button>
+                </a>
               </div>
             </div>
 
@@ -861,30 +864,6 @@
       aria-label="WhatsApp"
       ><i class="fab fa-whatsapp"></i
     ></a>
-
-    <!-- Team Member Details Modal -->
-    <div
-      id="team-modal-overlay"
-      class="team-modal-overlay"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="team-modal-name"
-    >
-      <div class="team-modal-box">
-        <button class="team-modal-close" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="team-modal-photo">
-          <img id="team-modal-photo" src="" alt="" />
-        </div>
-        <div class="team-modal-content">
-          <h3 id="team-modal-name"></h3>
-          <div id="team-modal-designation" class="team-modal-designation"></div>
-          <div id="team-modal-practice" class="team-modal-practice"></div>
-          <div id="team-modal-bio" class="team-modal-bio"></div>
-        </div>
-      </div>
-    </div>
 
     <script src="js/main.js"></script>
   </body>
